@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1767B41F19FF7845005E9415 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1767B41E19FF7845005E9415 /* QuartzCore.framework */; };
+		1767B42219FF9B5F005E9415 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1767B42119FF9B5F005E9415 /* Foundation.framework */; };
+		1767B42419FF9B6C005E9415 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1767B42319FF9B6C005E9415 /* UIKit.framework */; };
+		2A48FABF19FEBC2D004EBD71 /* BoardGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A48FABE19FEBC2D004EBD71 /* BoardGame.m */; };
 		2A70456E19FEA3BB0059780A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A70456D19FEA3BB0059780A /* main.m */; };
 		2A70457119FEA3BB0059780A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A70457019FEA3BB0059780A /* AppDelegate.m */; };
 		2A70457419FEA3BB0059780A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A70457319FEA3BB0059780A /* ViewController.m */; };
@@ -27,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1767B41E19FF7845005E9415 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1767B42119FF9B5F005E9415 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1767B42319FF9B6C005E9415 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2A48FABD19FEBC2D004EBD71 /* BoardGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardGame.h; sourceTree = "<group>"; };
+		2A48FABE19FEBC2D004EBD71 /* BoardGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardGame.m; sourceTree = "<group>"; };
 		2A70456819FEA3BB0059780A /* GameOfLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A70456C19FEA3BB0059780A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A70456D19FEA3BB0059780A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1767B42419FF9B6C005E9415 /* UIKit.framework in Frameworks */,
+				1767B42219FF9B5F005E9415 /* Foundation.framework in Frameworks */,
+				1767B41F19FF7845005E9415 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,10 +72,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1767B42019FF784F005E9415 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1767B42319FF9B6C005E9415 /* UIKit.framework */,
+				1767B42119FF9B5F005E9415 /* Foundation.framework */,
+				1767B41E19FF7845005E9415 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2A70455F19FEA3BB0059780A = {
 			isa = PBXGroup;
 			children = (
 				2A70456A19FEA3BB0059780A /* GameOfLife */,
+				1767B42019FF784F005E9415 /* Frameworks */,
 				2A70458419FEA3BB0059780A /* GameOfLifeTests */,
 				2A70456919FEA3BB0059780A /* Products */,
 			);
@@ -85,6 +108,8 @@
 				2A70457019FEA3BB0059780A /* AppDelegate.m */,
 				2A70457219FEA3BB0059780A /* ViewController.h */,
 				2A70457319FEA3BB0059780A /* ViewController.m */,
+				2A48FABD19FEBC2D004EBD71 /* BoardGame.h */,
+				2A48FABE19FEBC2D004EBD71 /* BoardGame.m */,
 				2A70457519FEA3BB0059780A /* Main.storyboard */,
 				2A70457819FEA3BB0059780A /* Images.xcassets */,
 				2A70457A19FEA3BB0059780A /* LaunchScreen.xib */,
@@ -219,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A48FABF19FEBC2D004EBD71 /* BoardGame.m in Sources */,
 				2A70457419FEA3BB0059780A /* ViewController.m in Sources */,
 				2A70457119FEA3BB0059780A /* AppDelegate.m in Sources */,
 				2A70456E19FEA3BB0059780A /* main.m in Sources */,
@@ -297,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -344,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GameOfLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GameOfLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +440,7 @@
 				2A70458D19FEA3BB0059780A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A70458E19FEA3BB0059780A /* Build configuration list for PBXNativeTarget "GameOfLifeTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +449,7 @@
 				2A70459019FEA3BB0059780A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
