@@ -58,9 +58,7 @@
     temp = 0;
 }
 
-- (void)willCheckTurnLive: (NSTimer *) timer{
-    
-    
+- (void)willCheckTurnLive: (NSTimer *) timer {
     
     [__newGame didGameStarter:^{
         
@@ -113,6 +111,44 @@
     innerArray = [[__localData objectAtIndex:posIni + 1] mutableCopy];
     [innerArray replaceObjectAtIndex:(posIni + 1) withObject:[NSNumber numberWithInt:1]];
     [__localData replaceObjectAtIndex:(posIni + 1) withObject:innerArray];
+    
+    
+    /// Other point
+    
+    innerArray = [[__localData objectAtIndex:10] mutableCopy];
+    [innerArray replaceObjectAtIndex:10 withObject:[NSNumber numberWithInt:1]];
+    [__localData replaceObjectAtIndex:10 withObject:innerArray];
+    
+    innerArray = [[__localData objectAtIndex:10] mutableCopy];
+    [innerArray replaceObjectAtIndex:11 withObject:[NSNumber numberWithInt:1]];
+    [__localData replaceObjectAtIndex:10 withObject:innerArray];
+    
+    innerArray = [[__localData objectAtIndex:11] mutableCopy];
+    [innerArray replaceObjectAtIndex:10 withObject:[NSNumber numberWithInt:1]];
+    [__localData replaceObjectAtIndex:11 withObject:innerArray];
+    
+    innerArray = [[__localData objectAtIndex:11] mutableCopy];
+    [innerArray replaceObjectAtIndex:11 withObject:[NSNumber numberWithInt:1]];
+    [__localData replaceObjectAtIndex:11 withObject:innerArray];
+    
+    
+    /// Other point
+    
+    innerArray = [[__localData objectAtIndex:40] mutableCopy];
+    [innerArray replaceObjectAtIndex:40 withObject:[NSNumber numberWithInt:1]];
+    [__localData replaceObjectAtIndex:40 withObject:innerArray];
+    
+    innerArray = [[__localData objectAtIndex:40] mutableCopy];
+    [innerArray replaceObjectAtIndex:41 withObject:[NSNumber numberWithInt:1]];
+    [__localData replaceObjectAtIndex:40 withObject:innerArray];
+    
+    innerArray = [[__localData objectAtIndex:41] mutableCopy];
+    [innerArray replaceObjectAtIndex:40 withObject:[NSNumber numberWithInt:1]];
+    [__localData replaceObjectAtIndex:41 withObject:innerArray];
+    
+    innerArray = [[__localData objectAtIndex:41] mutableCopy];
+    [innerArray replaceObjectAtIndex:41 withObject:[NSNumber numberWithInt:1]];
+    [__localData replaceObjectAtIndex:41 withObject:innerArray];
     
     
     // Asign first generation to our main object.

@@ -144,7 +144,6 @@
     x = (x) + [[position objectAtIndex:0] intValue];
     y = (y) + [[position objectAtIndex:1] intValue];
     
-    //NSLog(@"neighbourAtPosition-> [%i][%i]", x, y);
     // Validate not valid rows (in board)
     if (x < 0 || y < 0 || x >= __playerBoard.count || y >= __playerBoard.count) {
         return -1;
